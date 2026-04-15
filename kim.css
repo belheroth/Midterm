@@ -1,0 +1,235 @@
+:root {
+  --main-bg: #0e0e0e;
+  --accent: #00a2ff;
+  --text-light: #d8d8d8;
+  --text-muted: #cccccc;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--main-bg);
+  color: var(--text-light);
+}
+
+nav {
+  background: var(--main-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid var(--accent);
+}
+
+nav .logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+header {
+  margin-top: -250px;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header h5 {
+  font-size: 200px;
+  color: var(--accent);
+}
+
+header h2 {
+  font-size: 40px;
+  margin-top: -370px;
+  margin-left: -380px;
+  color: var(--accent);
+}
+
+header h1 {
+  font-style: Freestyle;
+  font-size: 100px;
+  margin-top: -130px;
+  margin-left: 500px;
+  color: white;
+  font-family: 'Calligraffitti', cursive;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 32px;
+  color: var(--accent);
+  margin-bottom: 40px;
+  border-left: 4px solid var(--accent);
+  padding-left: 15px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-grid img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.info-grid div {
+  background: #1b1b1b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info-grid div h3 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-muted);
+  padding: 20px;
+  margin-top: 60px;
+  border-top: 1px solid #222;
+}
+
+.softwares {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.softwares img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.top-links {
+  margin: 40px auto 20px;
+  text-align: center;
+}
+
+.top-links a {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: #eee;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.top-links a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+#works {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.works-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.works-gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.works-gallery img:hover,
+.works-gallery video:hover {
+  transform: scale(1.05);
+}
+
+.works-gallery video {
+  width: 1000px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+/* --- Added Styles for Midterm Requirements --- */
+
+.form-container {
+  background: #1b1b1b;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.form-container input, .form-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #222;
+  color: var(--text-light);
+  border: 1px solid #444;
+  border-radius: 5px;
+  box-sizing: border-box; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-container input:focus, .form-container textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.action-btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+  background: #0088cc;
+}
